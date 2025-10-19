@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sky Luxury Consultancy LLC</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!-- Favicon for Sky Luxury Consultancy LLC -->
+<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="theme-color" content="#000000">
++
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#000 0%,#1C1E1F 60%);color:rgba(255,255,255,0.88);}
+header,footer{padding:16px 20px;text-align:center;}
+header .brand{font-family:'Playfair Display',serif;font-weight:700;color:#A7B0A5;margin-bottom:12px;}
+nav a{margin:0 6px;color:var(--muted-white);}
+nav a.active{color:#D4AF37;}
+form{max-width:600px;margin:40px auto;display:flex;flex-direction:column;gap:12px;}
+input,textarea{padding:12px;border-radius:8px;border:none;background:rgba(255,255,255,0.05);color:var(--muted-white);}
+button{padding:10px 18px;border-radius:999px;background:#D4AF37;color:#081010;font-weight:700;border:none;cursor:pointer;}
+button:hover{transform:translateY(-2px);}
+</style>
+</head>
+<body>
+
+<header>
+<div class="brand">Sky Luxury Consultancy LLC</div>
+<nav>
+<a href="index.html">Home</a> | <a href="testimonials.html">Testimonials</a> | <a class="active" href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<h2 style="text-align:center;">Let's Start Planning</h2>
+<form id="contactForm">
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" placeholder="Your full name" required>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="you@example.com" required>
+<label for="date">Event Date (approx)</label>
+<input type="text" id="date" name="date" placeholder="e.g., June 2026 or flexible">
+<label for="message">Tell us about your event</label>
+<textarea id="message" name="message" placeholder="Location, style, guest count, anything you'd like us to know..." required></textarea>
+<button type="submit">Book a Free Consultation</button>
+<div style="margin-top:12px;text-align:center;">Or email: <a href="mailto:info@skyluxuryconsultancy.com" style="color:#A7B0A5;">info@skyluxuryconsultancy.com</a></div>
+</form>
+</main>
+
+<footer>
+<p>&copy; 2025 Sky Luxury Consultancy LLC. <a href="index.html" style="color:#A7B0A5;">Home</a> | <a href="testimonials.html" style="color:#A7B0A5;">Testimonials</a></p>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit',(e)=>{e.preventDefault();alert('Thank you! Your consultation request has been received.');e.target.reset();});
+</script>
+
+
+</body>
+</html>
